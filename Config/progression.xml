@@ -1,0 +1,7 @@
+<configs>
+	<append xpath="//crafting_skill[@name='craftingHarvestingTools']/display_entry[@icon='meleeToolRepairT0StoneAxe']/unlock_entry/@item">,meleeToolRepairingWrench</append>
+	<append xpath="//crafting_skill[@name='craftingHarvestingTools']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,75" value="1" tags="meleeToolRepairingWrench"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="5,10,15,20,25,30" value="1,2,3,4,5,6" tags="meleeToolRepairingWrench"/>
+	</append>
+</configs>

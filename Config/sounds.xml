@@ -1,0 +1,46 @@
+<configs>
+	<append xpath="/Sounds">
+		<SoundDataNode name="VehicleRepairWrenchSound">
+		  <AudioSource name="Sounds/AudioSource_WeaponFire"/>
+		  <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		  <Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+		  <AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundsPrefab.unity3d?RepairWrench01"/>
+      <AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundsPrefab.unity3d?RepairWrench02"/>
+      <AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundsPrefab.unity3d?RepairWrench03"/>
+      <AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundsPrefab.unity3d?RepairWrench04"/>
+      <AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundsPrefab.unity3d?RepairWrench05"/>
+		  <LocalCrouchVolumeScale value="1"/>
+		  <CrouchNoiseScale value="1"/>
+		  <NoiseScale value="1"/>
+		  <MaxVoices value="3"/>
+		  <MaxVoicesPerEntity value="1"/>
+		  <MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+
+    <SoundDataNode name="VehicleRepairWrenchError">
+		  <AudioSource name="Sounds/AudioSource_WeaponFire"/>
+		  <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		  <Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+		  <AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundsPrefab.unity3d?RepairWrenchError"/>
+		  <LocalCrouchVolumeScale value="1"/>
+		  <CrouchNoiseScale value="1"/>
+		  <NoiseScale value="1"/>
+		  <MaxVoices value="3"/>
+		  <MaxVoicesPerEntity value="1"/>
+		  <MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+
+    <SoundDataNode name="VehicleRepairWrenchSilence">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Channel name="Mouth"/>
+			<Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundSilencePrefab.unity3d?RepairWrenchSilence" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<maxVoicesPerEntity name="1" />
+			<MaxRepeatRate name="3.0" />
+		</SoundDataNode>
+	</append>
+</configs>

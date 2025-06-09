@@ -1,0 +1,10 @@
+<configs>
+  <append xpath="/windows">
+    <window name="RepairWrenchStatusWindow" anchor="RightCenter" visible="true" normal_color="[iconColor]" cursor_area="true">
+      <rect pos="0,0">
+        <sprite depth="1010" name="repairWrenchStatusBG" sprite="RepairWrenchMessageBG" type="sliced" pos="-375,-850" width="750" height="75"/>
+        <label depth="1011" name="repairWrenchStatusLabel" text="Missing the required resources to repair" width="700" height="30" pos="-275, -875"/>
+      </rect>
+    </window>
+  </append>
+</configs>

@@ -1,0 +1,5 @@
+# Ignore visual studio generated files
+*.vsidx
+
+# Ignore obj folder
+obj/

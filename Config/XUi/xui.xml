@@ -1,0 +1,5 @@
+<configs>
+  <append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+    <window name="RepairWrenchStatusWindow" anchor="CenterTop" />
+	</append>
+</configs>

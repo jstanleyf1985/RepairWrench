@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- Disable Features -->
+	<setting key="RepairRequiresConsumable">true</setting> <!-- Requires consumable item to repair -->
+	<setting key="RepairByPercentage">true</setting> <!-- Repairs using a multiplier per perk level, else uses a flat amount -->
+	<setting key="RepairParticlesEnabled">true</setting> <!-- Adds healing particle to vehicle -->
+	<setting key="RepairWrenchDurabilityEnabled">true</setting> <!-- Sets the wrench to remove durability on use -->
+	<setting key="RepairHealOverTimeEnabled">true</setting> <!-- Sets the wrench action 1 (right click) to heal over time-->
+	<setting key="RepairHealOverTimePercentage">true</setting> <!-- Sets the wrench to heal over time using percentage or flat -->
+	<setting key="DisplayMessagesInUI">true</setting> <!-- Sets the UI to display status messages -->
+	<setting key="PlayStatusMessageSFX">true</setting> <!-- Sets the game to play an audible status alert -->
+	
+	<!-- Feature Values -->
+	<setting key="RepairAmountBase">1000</setting> <!-- Used for disabled percentage based healing -->
+	<setting key="RepairPercentage">0.02</setting> <!-- Used for perk level repair multiplier 0.025 = 2.5% -->
+	<setting key="RepairConsumableItemName">resourceMechanicalParts</setting> <!-- Name of item in items.xml to be consumed on repair -->
+	<setting key="RepairConsumableAmount">5</setting> <!-- The amount of consumable required per repair -->
+	<setting key="RepairRange">3</setting> <!-- Distance around the player you can repair vehicles -->
+	<setting key="RepairQualityMultiplier">1</setting> <!-- Percentage per quality level added to vehicle heal -->
+	<setting key="RepairPerQualityFlat">100</setting> <!-- Amount to repair if using flat amounts per quality level -->
+	<setting key="RepairPerPerkFlat">100</setting> <!-- Amount to repair if using flat amounts per perk level -->
+	<setting key="RepairHOTTicks">10</setting> <!-- Amount of times the heal applies -->
+	<setting key="RepairHOTTickTime">5</setting> <!-- Amount of time to wait before next tick in seconds, can use decimal -->
+	<setting key="RepairHOTPercentage">0.01</setting> <!-- Amount to heal per tick if percentage healing is enabled-->
+	<setting key="RepairHOTFlat">200</setting> <!-- Amount to heal per tick if not using percentage healing -->
+	<setting key="RepairHOTConsumableItemName">resourceMechanicalParts</setting> <!-- Name of item in items.xml to be consumed on repair for heal over time-->
+	<setting key="RepairHOTConsumableAmount">2</setting> <!-- The amount of consumable required per repair for heal over time -->
+	
+	
+</configuration>

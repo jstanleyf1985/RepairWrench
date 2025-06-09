@@ -1,0 +1,2 @@
+Key,Source,Context,Changes,English
+meleeToolRepairingWrench,items,Attribute,New,"Vehicle Repair Wrench"

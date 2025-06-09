@@ -1,0 +1,59 @@
+<configs>
+  <append xpath="/items">
+    <item name="meleeToolRepairingWrench">
+      <property name="Tags" value="blunt,melee,grunting,light,tool,longShaft,attPerception,perkSalvageOperations,canHaveCosmetic,salvageTool,salvagingSkill,meleeToolRepairingWrench"/>
+      <property name="DisplayType" value="melee"/>
+      <property name="HoldType" value="29"/>
+      <property name="Meshfile" value="#@modfolder:Resources/RepairWrenchPrefab.unity3d?RepairWrenchModel"/>
+		  <property name="DropMeshfile" value="#@modfolder:Resources/RepairWrenchPrefab.unity3d?RepairWrenchModel"/>
+      <property name="CustomIcon" value="VehicleRepairWrench"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="TintColor" value="255, 255, 255"/>
+      <property name="ScrapTimeOverride" value="10.0"/>
+      <property name="RepairTools" value="resourceRepairKit"/>
+      <property name="DegradationBreaksAfter" value="false"/>
+      <property name="SoundJammed" value="ItemNeedsRepair"/>
+      <property name="SoundDestroy" value="metaldestroy"/>
+      <property name="EconomicValue" value="400"/>
+      <property name="TraderStageTemplate" value="baseTier0"/>
+      <property name="UnlockedBy" value="craftingSalvageTools"/>
+      <property name="ShowQuality" value="true"/>
+      <property name="Group" value="Tools/Traps,Basics"/>
+      <property name="RepairExpMultiplier" value="5.5"/>
+      <property name="SoundUnholster" value="weapon_unholster"/>
+      <property name="SoundHolster" value="weapon_holster"/>
+      <property name="SoundPickup" value="wrench_grab"/>
+      <property name="SoundPlace" value="wrench_place"/>
+      <property name="HasQuality" value="true"/>
+      
+      <property class="Action0">
+        <property name="Class" value="RepairWrench.ItemActionRepairVehicle, RepairWrench"/>
+        <property name="Sound_start" value="knife_bone_swinglight"/>
+        <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+        <property name="ToolCategory.Disassemble" value="1" param1="1"/>
+        <property name="Particle_harvesting" value="true" param1="metal"/>
+        <property name="UseGrazingHits" value="true"/>
+        <property name="GrazeStart" value=".25"/>
+        <property name="GrazeEnd" value=".3"/>
+        <property name="SwingDegrees" value="0"/>
+        <property name="SwingAngle" value="0"/>
+        <property name="HarvestHitEffectOn" value="false"/>
+      </property>
+      <property class="Action1">
+        <property name="Class" value="RepairWrench.ItemActionRepairVehicle, RepairWrench"/>
+        <property name="Sound_start" value="knife_bone_swinglight"/>
+        <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+        <property name="UsePowerAttackAnimation" value="false"/>
+        <property name="UsePowerAttackTriggers" value="true"/>
+        <property name="UseGrazingHits" value="true"/>
+        <property name="GrazeStart" value=".25"/>
+        <property name="GrazeEnd" value=".3"/>
+        <property name="SwingDegrees" value="0"/>
+        <property name="SwingAngle" value="0"/>
+      </property>
+      <effect_group name="meleeToolRepairT0StoneAxe">
+        <passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
+      </effect_group>
+    </item>
+  </append>
+</configs>

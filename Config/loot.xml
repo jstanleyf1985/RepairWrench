@@ -1,0 +1,41 @@
+<configs>
+  <append xpath="/lootcontainers/lootgroup[@name='groupToolsT1Bonus']">
+    <item name="meleeToolRepairingWrench"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupToolsT1Wrench']">
+    <item name="meleeToolRepairingWrench"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupToolsT1']">
+    <item name="meleeToolRepairingWrench"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='prefabQuestLoot']">
+    <item name="meleeToolRepairingWrench"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupQuestWrench']">
+    <item name="meleeToolRepairingWrench"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupSinks03']">
+    <item name="meleeToolRepairingWrench"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox03']">
+    <item name="meleeToolRepairingWrench"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupFireTruck03']">
+    <item name="meleeToolRepairingWrench"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupAirDropT1Bundles']">
+    <item name="meleeToolRepairingWrench"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='twitch_tier1tool']">
+    <item name="meleeToolRepairingWrench"/>
+  </append>
+</configs>

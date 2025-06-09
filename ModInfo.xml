@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="VehicleRepairWrench" />0
+    <DisplayName value="Vehicle Repair Wrench" />0
+    <Version value="1.0.1.100" compat="V1"/>
+    <Description value="Adds an vehicle repair wrench" />
+    <Author value="Jonathan Stanley" />
+    <Website value="https://community.7daystodie.com"/> 
+</xml>
