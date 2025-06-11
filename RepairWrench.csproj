@@ -102,6 +102,7 @@
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include="LICENSE.md" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

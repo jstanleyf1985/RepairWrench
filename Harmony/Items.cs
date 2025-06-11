@@ -17,7 +17,9 @@ namespace RepairWrench
     public static Dictionary<int, GameObject> ActiveRepairEffects = new Dictionary<int, GameObject>();
     public static void RunVehicleRepair(ItemActionData _actionData, bool _bReleased)
     {
-      int greaseMonkeyProgression = GameManager.Instance.myEntityPlayerLocal.Progression.GetProgressionValue("perkGreaseMonkey").level; // (1-5)
+      var progression = GameManager.Instance?.myEntityPlayerLocal?.Progression?.GetProgressionValue("perkGreaseMonkey");
+      bool progressionExists = progression != null;
+      int greaseMonkeyProgression = progressionExists ? progression.Level : 1;
       bool vehicleFound = false;
       EntityAlive Player = GameManager.Instance.myEntityPlayerLocal;
       List<EntityAlive> EntitiesInBounds = GameManager.Instance.World.GetLivingEntitiesInBounds(_actionData.invData.holdingEntity, new Bounds(_actionData.invData.holdingEntity.position, Vector3.one * 2f * RepairConfig.RepairRange));
@@ -53,7 +55,9 @@ namespace RepairWrench
 
     public static void RunVehicleRepairOT(ItemActionData _actionData, bool _bReleased)
     {
-      int greaseMonkeyProgression = GameManager.Instance.myEntityPlayerLocal.Progression.GetProgressionValue("perkGreaseMonkey").level; // (1-5)
+      var progression = GameManager.Instance?.myEntityPlayerLocal?.Progression?.GetProgressionValue("perkGreaseMonkey");
+      bool progressionExists = progression != null;
+      int greaseMonkeyProgression = progressionExists ? progression.Level : 1;
       bool vehicleFound = false;
       EntityAlive player = GameManager.Instance.myEntityPlayerLocal;
       List<EntityAlive> EntitiesInBounds = GameManager.Instance.World.GetLivingEntitiesInBounds(_actionData.invData.holdingEntity, new Bounds(_actionData.invData.holdingEntity.position, Vector3.one * 2f * RepairConfig.RepairRange));
@@ -94,7 +98,9 @@ namespace RepairWrench
     {
       int healthRemaining = Mathf.Clamp(entityFound.GetMaxHealth() - entityFound.Health, 0, int.MaxValue);
       int quality = GameManager.Instance.myEntityPlayerLocal.inventory.holdingItemItemValue.Quality;
-      int greaseMonkey = GameManager.Instance.myEntityPlayerLocal.Progression.GetProgressionValue("perkGreaseMonkey").level;
+      var progression = GameManager.Instance?.myEntityPlayerLocal?.Progression?.GetProgressionValue("perkGreaseMonkey");
+      bool progressionExists = progression != null;
+      int greaseMonkey = progressionExists ? progression.Level : 1;
 
       if (RepairConfig.RepairByPercentage)
       {

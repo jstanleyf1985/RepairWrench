@@ -16,7 +16,7 @@
       <property name="SoundDestroy" value="metaldestroy"/>
       <property name="EconomicValue" value="400"/>
       <property name="TraderStageTemplate" value="baseTier0"/>
-      <property name="UnlockedBy" value="craftingSalvageTools"/>
+      <property name="UnlockedBy" value="craftingHarvestingTools"/>
       <property name="ShowQuality" value="true"/>
       <property name="Group" value="Tools/Traps,Basics"/>
       <property name="RepairExpMultiplier" value="5.5"/>
@@ -52,6 +52,7 @@
         <property name="SwingAngle" value="0"/>
       </property>
       <effect_group name="meleeToolRepairT0StoneAxe">
+        <!-- Edit the value below to increase or decrease repairs per minute -->
         <passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
       </effect_group>
     </item>
