@@ -442,7 +442,19 @@ namespace RepairWrench
   {
     static bool Prefix(Entity __instance, string clipName, bool sound_in_head, bool serverSignalOnly, bool isUnique)
     {
-      if (!string.IsNullOrEmpty(clipName) && clipName.ToLower().Contains("wrench_harvest")) return false;
+      if (string.IsNullOrEmpty(clipName)) return true;
+
+      if (clipName.IndexOf("wrench_harvest", StringComparison.OrdinalIgnoreCase) >= 0)
+      {
+        if (__instance is EntityPlayerLocal player)
+        {
+          var heldItem = player.inventory?.holdingItem;
+          if (heldItem?.GetItemName() == "meleeToolRepairingWrench")
+          {
+            return false;
+          }
+        }
+      }
 
       return true;
     }
