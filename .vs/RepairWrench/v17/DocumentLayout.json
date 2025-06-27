@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\",
+  "WorkspaceRootPath": "E:\\VehicleRepairWrenchSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|e:\\steamlibrary\\steamapps\\common\\7 days to die\\mods\\vehiclerepairwrenchsolution\\harmony\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|e:\\vehiclerepairwrenchsolution\\harmony\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|solutionrelative:harmony\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\configuration.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|solutionrelative:configuration.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\harmony\\init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|E:\\VehicleRepairWrenchSolution\\harmony\\init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|solutionrelative:harmony\\init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\harmony\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|E:\\VehicleRepairWrenchSolution\\harmony\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|solutionrelative:harmony\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|E:\\VehicleRepairWrenchSolution\\configuration.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8067F976-E450-4127-8C5C-8C2D58F97DE4}|RepairWrench.csproj|solutionrelative:configuration.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Items.cs",
-              "DocumentMoniker": "E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\Harmony\\Items.cs",
+              "DocumentMoniker": "E:\\VehicleRepairWrenchSolution\\Harmony\\Items.cs",
               "RelativeDocumentMoniker": "Harmony\\Items.cs",
-              "ToolTip": "E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\Harmony\\Items.cs",
+              "ToolTip": "E:\\VehicleRepairWrenchSolution\\Harmony\\Items.cs",
               "RelativeToolTip": "Harmony\\Items.cs",
-              "ViewState": "AQIAAFMBAAAAAAAAAAA9wMQBAAALAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKgBAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T14:46:51.956Z",
               "IsPinned": true,
@@ -60,35 +60,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UI.cs",
-              "DocumentMoniker": "E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\Harmony\\UI.cs",
+              "DocumentMoniker": "E:\\VehicleRepairWrenchSolution\\Harmony\\UI.cs",
               "RelativeDocumentMoniker": "Harmony\\UI.cs",
-              "ToolTip": "E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\Harmony\\UI.cs",
+              "ToolTip": "E:\\VehicleRepairWrenchSolution\\Harmony\\UI.cs",
               "RelativeToolTip": "Harmony\\UI.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAIA9wCIAAAAHAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAA6wCUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-07T17:54:29.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Init.cs",
-              "DocumentMoniker": "E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\Harmony\\Init.cs",
+              "DocumentMoniker": "E:\\VehicleRepairWrenchSolution\\Harmony\\Init.cs",
               "RelativeDocumentMoniker": "Harmony\\Init.cs",
-              "ToolTip": "E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\Harmony\\Init.cs",
+              "ToolTip": "E:\\VehicleRepairWrenchSolution\\Harmony\\Init.cs",
               "RelativeToolTip": "Harmony\\Init.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAywAsAAAAKAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAiwBgAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T03:47:35.335Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Configuration.xml",
-              "DocumentMoniker": "E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\Configuration.xml",
+              "DocumentMoniker": "E:\\VehicleRepairWrenchSolution\\Configuration.xml",
               "RelativeDocumentMoniker": "Configuration.xml",
-              "ToolTip": "E:\\SteamLibrary\\steamapps\\common\\7 Days To Die\\Mods\\VehicleRepairWrenchSolution\\Configuration.xml",
+              "ToolTip": "E:\\VehicleRepairWrenchSolution\\Configuration.xml",
               "RelativeToolTip": "Configuration.xml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",

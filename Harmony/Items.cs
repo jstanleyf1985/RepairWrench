@@ -171,7 +171,7 @@ namespace RepairWrench
     public static XUiM_PlayerInventory PlayerItems;
     public static void PlayWrenchingAnimation()
     {
-      GameManager.Instance.myEntityPlayerLocal.StartHarvestingAnim();
+      GameManager.Instance.myEntityPlayerLocal.StartHarvestingAnim(0, true);
       GameManager.Instance.myEntityPlayerLocal.FireEvent(MinEventTypes.onSelfPrimaryActionStart, true);
     }
 
@@ -437,7 +437,7 @@ namespace RepairWrench
     }
   }
 
-  [HarmonyPatch(typeof(Entity), nameof(Entity.PlayOneShot), typeof(string), typeof(bool), typeof(bool), typeof(bool))]
+  [HarmonyPatch(typeof(Entity), nameof(Entity.PlayOneShot), typeof(string), typeof(bool), typeof(bool), typeof(bool), typeof(AnimationEvent))]
   public class Patch_Entity_PlayOneShot
   {
     static bool Prefix(Entity __instance, string clipName, bool sound_in_head, bool serverSignalOnly, bool isUnique)

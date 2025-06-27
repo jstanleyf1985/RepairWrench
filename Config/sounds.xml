@@ -1,8 +1,8 @@
 <configs>
 	<append xpath="/Sounds">
 		<SoundDataNode name="VehicleRepairWrenchSound">
-		  <AudioSource name="Sounds/AudioSource_WeaponFire"/>
-		  <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		  <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/>
+      <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 		  <Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
 		  <AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundsPrefab.unity3d?RepairWrench01"/>
       <AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundsPrefab.unity3d?RepairWrench02"/>
@@ -18,8 +18,8 @@
 		</SoundDataNode>
 
     <SoundDataNode name="VehicleRepairWrenchError">
-		  <AudioSource name="Sounds/AudioSource_WeaponFire"/>
-		  <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+ 		  <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/>
+      <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 		  <Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
 		  <AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundsPrefab.unity3d?RepairWrenchError"/>
 		  <LocalCrouchVolumeScale value="1"/>
@@ -31,7 +31,8 @@
 		</SoundDataNode>
 
     <SoundDataNode name="VehicleRepairWrenchSilence">
-			<AudioSource name="Sounds/AudioSource_VO" />
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/>
+      <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 			<Channel name="Mouth"/>
 			<Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
 			<AudioClip ClipName="#@modfolder:Resources/RepairWrenchSoundSilencePrefab.unity3d?RepairWrenchSilence" />

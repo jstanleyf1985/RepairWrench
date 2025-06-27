@@ -48,10 +48,7 @@ namespace RepairWrench
           GameManager.Instance?.StopCoroutine("OnPlayerLoggedIn");
           break;
         }
-        else
-        {
-          Log.Out("Waiting for player to load...");
-        }
+
         yield return new WaitForSeconds(1f);
       }
     }
