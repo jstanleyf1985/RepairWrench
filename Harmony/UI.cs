@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HarmonyLib;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +45,13 @@ namespace RepairWrench
 
           GameManager.Instance.StartCoroutine(FadeWindow((XUiV_Window)UIStatic.WindowRepairWrenchMessages, 1f, false));
 
+          // Fix for game bug if adding mod to an existing game where player has already progressed, remains unlocked
+          var harvestingToolsCheck = GameManager.Instance.myEntityPlayerLocal?.Progression;
+          if (harvestingToolsCheck != null)
+          {
+            int harvestingToolsLevel = harvestingToolsCheck.GetProgressionValue("craftingHarvestingTools").level;
+            if(harvestingToolsLevel > 1) GameManager.Instance.myEntityPlayerLocal.SetCVar("meleeToolRepairingWrench", 1);
+          }
 
           GameManager.Instance?.StopCoroutine("OnPlayerLoggedIn");
           break;
@@ -115,6 +123,45 @@ namespace RepairWrench
       }
 
       GameManager.Instance.StopCoroutine("WaitSeconds");
+    }
+
+    [HarmonyPatch(typeof(EffectManager), nameof(EffectManager.GetValue))]
+    public class Patch_EffectManager_GetValue
+    {
+      static void Postfix(
+          PassiveEffects _passiveEffect,
+          ItemValue _originalItemValue,
+          float _originalValue,
+          EntityAlive _entity,
+          Recipe _recipe,
+          FastTags<TagGroup.Global> tags,
+          bool calcEquipment,
+          bool calcHoldingItem,
+          bool calcProgression,
+          bool calcBuffs,
+          bool calcChallenges,
+          int craftingTier,
+          bool useMods,
+          bool _useDurability,
+          ref float __result
+      )
+      {
+        if (_passiveEffect != PassiveEffects.CraftingTier) return;
+        if (!tags.Test_AnySet(FastTags<TagGroup.Global>.Parse("meleeToolRepairingWrench"))) return;
+
+        // Fix for game bug if adding mod to an existing game where player has already progressed, remains unlocked
+        var harvestingToolsCheck = GameManager.Instance.myEntityPlayerLocal?.Progression;
+        if (harvestingToolsCheck != null)
+        {
+          int harvestingToolsLevel = harvestingToolsCheck.GetProgressionValue("craftingHarvestingTools").level;
+          if (harvestingToolsLevel <= 5) __result = 1;
+          if (harvestingToolsLevel > 5 && harvestingToolsLevel <= 10) __result = 2;
+          if (harvestingToolsLevel > 10 && harvestingToolsLevel <= 15) __result = 3;
+          if (harvestingToolsLevel > 15 && harvestingToolsLevel <= 20) __result = 4;
+          if (harvestingToolsLevel > 20 && harvestingToolsLevel <= 30) __result = 5;
+          if (harvestingToolsLevel > 30) __result = 6;
+        }
+      }
     }
   }
 }

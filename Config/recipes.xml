@@ -1,6 +1,6 @@
 <configs>
 	<append xpath="/recipes">
-    <recipe name="meleeToolRepairingWrench" count="1" tags="learnable,perkSalvageOperations">
+    <recipe name="meleeToolRepairingWrench" count="1" tags="learnable,perkSalvageOperations,meleeToolRepairingWrench">
       <ingredient name="resourceForgedIron" count="12"/>
       <ingredient name="resourceMechanicalParts" count="4"/>
       <ingredient name="resourceDuctTape" count="2"/>

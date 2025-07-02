@@ -12,6 +12,16 @@ namespace RepairWrench
       RepairWrenchGlobal.LoadRepairEffect();
 
       GameManager.Instance.StartCoroutine(UICoroutines.OnPlayerLoggedIn());
+
+      XUiC_CraftingWindowGroup craftingGroup = GameManager.Instance?.myEntityPlayerLocal?.playerUI?.xui?.FindWindowGroupByName("crafting") as XUiC_CraftingWindowGroup;
+      if (craftingGroup != null)
+      {
+        //var categories = craftingGroup.categoryList.
+        //foreach (var cat in categories)
+        //{
+        //  Log.Warning($"Crafting Category: {cat.name}"); // or .CategoryName
+        //}
+      }
     }
 
     public static void RepairWrenchStop(ref ModEvents.SWorldShuttingDownData _data)
